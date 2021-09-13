@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/mngrp_drawer_1"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/action_sign_in_up"
+            android:orderInCategory="0"
+            android:title="@string/text_sign_in_up"
+            app:showAsAction="never" />
+
+    </group>
+    <group
+        android:id="@+id/mngrp_drawer_2"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/action_chat_bot"
+            android:orderInCategory="100"
+            android:title="@string/text_chat_bot"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_discover"
+            android:orderInCategory="100"
+            android:title="@string/text_discover"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_collection"
+            android:orderInCategory="100"
+            android:title="@string/text_collection"
+            app:showAsAction="never" />
+
+
+        <item
+            android:id="@+id/action_history"
+            android:orderInCategory="100"
+            android:title="@string/text_history"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_setting"
+            android:orderInCategory="100"
+            android:title="@string/setting"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_about"
+            android:orderInCategory="100"
+            android:title="@string/text_about"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_sign_out"
+            android:orderInCategory="100"
+            android:title="@string/text_sign_out"
+            app:showAsAction="never" />
+
+    </group>
+
+</menu>

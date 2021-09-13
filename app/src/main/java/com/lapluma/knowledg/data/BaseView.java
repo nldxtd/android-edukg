@@ -1,0 +1,14 @@
+package com.lapluma.knowledg.data;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+
+public interface BaseView<T extends BasePresenter> {
+
+    void setPresenter(T presenter);
+
+    Context context();
+
+    void start(Intent intent, Bundle options);
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/check_box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/spacing_medium"
+    android:layout_marginLeft="@dimen/spacing_medium"
+    android:layout_marginRight="@dimen/spacing_medium"
+    android:visibility="gone"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/et_subject"
+        style="@style/EditText.Flat.Grey"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spacing_xmlarge"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_round_bg_overlay_white"
+        android:drawableEnd="@drawable/ic_arrow_drop"
+        android:drawableRight="@drawable/ic_arrow_drop"
+        android:editable="false"
+        android:focusable="false"
+        android:minHeight="@dimen/spacing_xmlarge"
+        android:paddingLeft="@dimen/spacing_middle"
+        android:paddingRight="@dimen/spacing_middle"
+        android:text="所有"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:layout_width="@dimen/spacing_large"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/et_sort"
+        style="@style/EditText.Flat.Grey"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spacing_xmlarge"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_round_bg_overlay_white"
+        android:drawableEnd="@drawable/ic_arrow_drop"
+        android:drawableRight="@drawable/ic_arrow_drop"
+        android:editable="false"
+        android:focusable="false"
+        android:minHeight="@dimen/spacing_xmlarge"
+        android:paddingLeft="@dimen/spacing_middle"
+        android:paddingRight="@dimen/spacing_middle"
+        android:text="默认排序"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

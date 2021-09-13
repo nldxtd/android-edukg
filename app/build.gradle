@@ -1,0 +1,79 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.lapluma.knowledg"
+        minSdk 26
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // google support library ---------------------------------------------------------------------
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+
+    // google maps library ------------------------------------------------------------------------
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation('com.google.android.libraries.places:places:2.4.0') {
+        exclude module: 'glide'
+    }
+
+    // google gson --------------------------------------------------------------------------------
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // third party dependencies -------------------------------------------------------------------
+    implementation 'com.balysv:material-ripple:1.0.2'                  // ripple effect
+    implementation 'com.github.bumptech.glide:glide:4.9.0'             // image loader
+    implementation 'com.wdullaer:materialdatetimepicker:3.2.0'         // date & time picker
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'          // circle image view
+    implementation 'com.hootsuite.android:nachos:1.1.1'                // material chips
+    implementation 'com.google.android:flexbox:0.3.2'                  // google flexible box
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'             // range seek bar
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'                 // http
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'// json process
+    implementation "org.projectlombok:lombok:1.18.16"
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    // for fast java class defining
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    implementation 'org.bouncycastle:bcprov-jdk15to18:1.68'            // encrypt password
+    implementation 'com.github.abel533:ECharts:3.0.0.2'                // echarts java object library
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.balysv:material-ripple:1.0.2'                  // ripple effects
+    implementation 'com.jakewharton:disklrucache:2.0.2'                // cache
+    implementation 'jp.wasabeef:recyclerview-animators:2.2.7'
+}
